@@ -8,10 +8,13 @@
 n=int(input("enter no"))
 for i in range(1,n+1):
     print()
-    spa=1
-    while spa>=1:
-        print("-",end="")
-        spa=spa-1
-        
+    spa=2
+    while spa<=i :
+        print(spa, end="")
+        while spa==i:
+          print(i+1,end="")
+        spa=spa+1
+
+
 
         

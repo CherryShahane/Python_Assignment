@@ -1,0 +1,30 @@
+'''
+1. Smart Log File Error Pattern Detector
+
+A cybersecurity company stores server logs containing repeated system activity characters.
+
+To detect suspicious looping behavior, the analytics team wants a Python program that finds the longest repeating substring present in the log file.
+
+If multiple substrings have the same length, print the first one found.
+
+ Input:
+
+text
+abcabcbb
+
+
+Output:
+
+text
+abc
+'''
+n=input("enter string")
+check=""
+i=0
+while i<len(n):
+    if n[i] in check:
+        break
+    else:
+        check=check+n[i]
+    i=i+1
+print("test",check)
